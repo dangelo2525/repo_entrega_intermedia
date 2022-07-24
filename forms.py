@@ -6,3 +6,5 @@ class Curso_formulario(forms.Form):
     camada= forms.IntegerField()
     
     
+    
+    

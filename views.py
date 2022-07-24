@@ -70,4 +70,14 @@ def buscar(request):
     else:
         
         return HttpResponse ("Campo vacio")
+    
+def elimina_curso (request , id):
+        
+    curso = Curso.objects.get(id=id)
+    curso.delete()
+    
+    curso = Curso.objects.all()
+    
+    return render(request, "cursos.html", {"cursos" : curso})
+        
 

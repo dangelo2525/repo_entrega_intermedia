@@ -11,7 +11,8 @@ urlpatterns = [
     path("entregables", views.entregables, name="entregables"),
     path ("alta_curso", views.curso_formulario),
     path ("buscar_curso" , views.buscar_curso),
-    path("buscar" , views.buscar)
+    path("buscar" , views.buscar),
+    path("elimina_curso/<int:id>", views.elimina_curso, name="elimina_curso")
     
     
 ]
